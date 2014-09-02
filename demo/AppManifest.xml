@@ -2,12 +2,12 @@
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="lpm"
-     ProductID="{fa92c9e2-9ddf-45b3-9d74-d41d48c05f9b}"
+     ProductID="{6bd56910-fa87-48b5-a35f-2fafbef4519d}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>Learning Path Manager</Title>
+    <Title>Learning Path Manager - AngularJS + Workfow</Title>
     <StartPage>~appWebUrl/appLauncher.html?{StandardTokens}&amp;SPHostTitle={HostTitle}&amp;SPHostLogoUrl={HostLogoUrl}</StartPage>
   </Properties>
 
