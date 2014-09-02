@@ -9,6 +9,7 @@
   function spContext($log, $cookieStore, $window, $location, $resource, $timeout, common, commonConfig) {
     var service = this;
     var spWeb = {
+      appWebUrl: '',
       url: '',
       title: '',
       logoUrl: ''
@@ -38,6 +39,10 @@
     // create sharepoint app context by moving params on querystring to an app cookie
     function createSpAppContext() {
       $log.log(loggerSource, 'writing spContext cookie', null);
+
+      var appWebUrl = decodeURIComponent($.getQueryStringValue("SPAppWebUrl"));
+      $cookieStore.put('SPAppWebUrl', appWebUrl);
+
       var url = decodeURIComponent($.getQueryStringValue("SPHostUrl"));
       $cookieStore.put('SPHostUrl', url);
 
@@ -47,15 +52,14 @@
       var logoUrl = decodeURIComponent($.getQueryStringValue("SPHostLogoUrl"));
       $cookieStore.put('SPHostLogoUrl', logoUrl);
 
-
       $log.log(loggerSource, 'redirecting to app', null);
-      var appUrl = $location.protocol() + "://" + $location.host() + "/lpm/app.html";
-      $window.location.href = appUrl;
+      $window.location.href = appWebUrl + '/app.html';
     }
 
     // init the sharepoint app context by loding the app's cookie contents
     function loadSpAppContext() {
       $log.log(loggerSource, 'loading spContext cookie', null);
+      service.hostWeb.appWebUrl = $cookieStore.get('SPAppWebUrl');
       service.hostWeb.url = $cookieStore.get('SPHostUrl');
       service.hostWeb.title = $cookieStore.get('SPHostTitle');
       service.hostWeb.logoUrl = $cookieStore.get('SPHostLogoUrl');
@@ -83,13 +87,10 @@
         common.logger.log("refreshed security validation", service.securityValidation, serviceId);
         common.logger.log("next refresh of security validation: " + validationRefreshTimeout + " seconds", null, serviceId);
 
-        // broadcast event that the digest was obtained
-        common.$broadcast(commonConfig.config.spContextSecurityDigestRefreshedEvent, {});
-
         // repeat this in FormDigestTimeoutSeconds-10
         $timeout(function () {
           refreshSecurityValidation();
-        }, validationRefreshTimeout*1000);
+        }, validationRefreshTimeout * 1000);
       }, function (error) {
         common.logger.logError("response from contextinfo", error, serviceId);
       });
