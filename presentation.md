@@ -4,7 +4,9 @@ Building SharePoint Single Page Apps with AngularJS
 
 SharePoint-Hosted Apps
 ======================
-> todo
+All resources required to implemented app stored in an AppWeb & served up by SharePoint
+
+
 
 Single Page Apps
 ================
@@ -36,12 +38,41 @@ Why SharePoint hosted Apps as SPAs?
 - SPA's yield a **richer user experience**
 - SPA's facilitate **modular app development**
 - Leverage SharePoint for services & data storage
-- Protecting the app business logic
+
 
 
 Organizing your Project
 -----------------------
-> todo... add image of my project, links to REFERENCES > SCRIPTS, app in APP
+- Put all JavaScript libraries / vendor scripts in `/Scripts`
+  - Just like `References` is for server side assemblies
+- Put your custom JavaScript in `/App`
+
+  ![client-side code project organization](img/ClientSideProjectOrg.png)
+
+  *Why?* Because you don't want to mix your custom code with scripts & libraries with
+
+  *Recommendation:* Look at [John Papa's](http://www.twitter.com/john_papa) [AngularJS style guide](https://github.com/johnpapa/angularjs-styleguide), specifically the section on [application structure](https://github.com/johnpapa/angularjs-styleguide#application-structure)
+
+
+
+Thinking Ahead...
+=================
+- Challenging stuff
+  - SharePoint creates a new AppWeb & throws away the old one when updating the app
+    - Storing app data in AppWeb's lists/libraries? **You'll lose it all on updates!**
+  - Handling app authentication (tokens)
+    - **DO NOT RETURN OAUTH ACCESS TOKENS TO CLIENT**
+    - May need an intermediary (*see Research Project Code Sample in **Resources** section for example*)
+- Cool techniques
+  - Use Google Analytics & virtual page views & custom events to track app usage
+  - Externalize JavaScript & CSS references to a CDN
+    - Enables app updates without actually updating the SharePoint app
+    - Doesn't help with new views
+  - Utilize A/B testing to see what UX works better for your users
+    - Combined with Google Analytics => killer customer service offered to your customers
+  - Use SharePoint workflows to protect sensitive business logic
+    - If server-side code needed, have workflow call it... app never sees where it went / came from
+  - Use BCS External Lists to hide where external data came from
 
 
 
@@ -57,4 +88,4 @@ Organizing your Project
 >  - [Building SharePoint Apps as Single Page Apps with AngularJS](http://pluralsight.com/training/Courses/TableOfContents/building-sharepoint-apps-spa-angularjs) - by Andrew Connell
 - Sample SharePoint SPA Projects
   - [OfficeDev - Learning Path Manager Code Sampel](https://github.com/OfficeDev/Learning-Path-Manager-Code-Sample) by Andrew Connell (*same as this one*)
-  - [OficeDev - Research Project Code Sample](https://github.com/OfficeDev/Research-Project-Code-Sample) by Andrew Connell & [Scot Hillier](http://www.twitter.com/scothillier)
+  - [OfficeDev - Research Project Code Sample](https://github.com/OfficeDev/Research-Project-Code-Sample) by Andrew Connell & [Scot Hillier](http://www.twitter.com/scothillier)
