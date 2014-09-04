@@ -55,6 +55,12 @@ Organizing your Project
 
 
 
+Demo... It's Da-Bomb!
+=====================
+![demo time, it's da bomb](img/dabomb.jpg)
+
+
+
 Thinking Ahead...
 =================
 - Challenging stuff
