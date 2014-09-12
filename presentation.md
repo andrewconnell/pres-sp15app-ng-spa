@@ -1,12 +1,26 @@
 Building SharePoint Single Page Apps with AngularJS
 ===================================================
-*Follow along at [github.com/andrewconnell/pres-spa-ng-spapps](http://github.com/andrewconnell/pres-spa-ng-spapps)!*
+> *Follow along at [github.com / andrewconnell / pres-spa-ng-spapps](http://github.com/andrewconnell/pres-spa-ng-spapps)*
+
+Overview
+========
+- [SharePoint-Hosted Apps](#sharepoint-hosted-apps)
+- [Single Page Apps](#single-page-apps)
+- [Thinking Ahead...](#thinking-ahead)
+
+
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
 
 SharePoint-Hosted Apps
 ======================
 All resources required to implemented app stored in an AppWeb & served up by SharePoint
 
 
+
+&laquo; **[back to top](#building-sharepoint-single-page-apps-with-angularjs)** &raquo;
 
 Single Page Apps
 ================
@@ -15,7 +29,7 @@ One page, multiple screens yet no traditional page refreshes
 
 
 Why Build Single Page Apps (SPAs)?
----------------------------------
+----------------------------------
 - Reduced round tripping to the server
 - Works great in low bandwidth & offline
 - Highly interactive
@@ -56,10 +70,12 @@ Organizing your Project
 
 
 Demo... It's Da-Bomb!
-=====================
+---------------------
 ![demo time, it's da bomb](img/dabomb.jpg)
 
 
+
+&laquo; **[back to top](#building-sharepoint-single-page-apps-with-angularjs)** &raquo;
 
 Thinking Ahead...
 =================
@@ -82,6 +98,20 @@ Thinking Ahead...
 
 
 
+Thanks! Any Questions?
+======================
+![questions?](img/clapping.gif)
+
+
+
+Andrew Connell
+==============
+- blog: [www.andrewconnell.com](http://www.andrewconnell.com)
+- twitter: [@andrewconnell](http://www.twitter.com/andrewconnell)
+- this presentation: [github.com / andrewconnell / pres-spa-ng-spapps](http://github.com/andrewconnell/pres-spa-ng-spapps)
+
+
+
 >#Resources
 >- **[AngularJS](https://angularjs.org/)**
 >- **[AngularJS in 20 Minutes](https://www.youtube.com/watch?v=tnXO-i7944M)** - from [ng-conf](http://www.ng-conf.org/)
@@ -95,3 +125,5 @@ Thinking Ahead...
 - Sample SharePoint SPA Projects
   - [OfficeDev - Learning Path Manager Code Sampel](https://github.com/OfficeDev/Learning-Path-Manager-Code-Sample) by Andrew Connell (*same as this one*)
   - [OfficeDev - Research Project Code Sample](https://github.com/OfficeDev/Research-Project-Code-Sample) by Andrew Connell & [Scot Hillier](http://www.twitter.com/scothillier)
+
+&laquo; **[back to top](#building-sharepoint-single-page-apps-with-angularjs)** &raquo;
