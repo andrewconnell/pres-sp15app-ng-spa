@@ -106,9 +106,8 @@ Thanks! Any Questions?
 
 Andrew Connell
 ==============
-- blog: [www.andrewconnell.com](http://www.andrewconnell.com)
-- twitter: [@andrewconnell](http://www.twitter.com/andrewconnell)
-- this presentation: [github.com / andrewconnell / pres-spa-ng-spapps](http://github.com/andrewconnell/pres-spa-ng-spapps)
+- [www.andrewconnell.com](http://www.andrewconnell.com) | [@andrewconnell](http://www.twitter.com/andrewconnell)
+- this pres: [github.com / andrewconnell / pres-spa-ng-spapps](http://github.com/andrewconnell/pres-spa-ng-spapps)
 
 
 
