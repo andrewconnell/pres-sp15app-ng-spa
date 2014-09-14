@@ -1,6 +1,6 @@
 Building SharePoint Single Page Apps with AngularJS
 ===================================================
-> *View the presentation here [andrewconnell.github.com / pres-sp15app-ng-spa](http://andrewconnell.github.com/pres-sp15app-ng-spa)*
+> *View the presentation here [andrewconnell.github.io / pres-sp15app-ng-spa](http://andrewconnell.github.com/pres-sp15app-ng-spa)*
 >>
 >*Why do [I use GitHub for developer presentations & benefits to you](http://www.andrewconnell.com/blog/using-github-for-developer-presentations)?*
 
