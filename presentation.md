@@ -1,7 +1,3 @@
-Building SharePoint Single Page Apps with AngularJS
-===================================================
-> *Follow along at [github.com / andrewconnell / pres-sp15app-ng-spa](http://github.com/andrewconnell/pres-sp15app-ng-spa)*
-
 Overview
 ========
 - [SharePoint-Hosted Apps](#sharepoint-hosted-apps)
@@ -10,17 +6,11 @@ Overview
 
 
 
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
-
-
 SharePoint-Hosted Apps
 ======================
 All resources required to implemented app stored in an AppWeb & served up by SharePoint
 
 
-
-&laquo; **[back to top](#building-sharepoint-single-page-apps-with-angularjs)** &raquo;
 
 Single Page Apps
 ================
@@ -69,60 +59,60 @@ Organizing your Project
 
 
 
-Demo... It's Da-Bomb!
----------------------
+DEMO
+----
 ![demo time, it's da bomb](img/dabomb.jpg)
 
 
 
-&laquo; **[back to top](#building-sharepoint-single-page-apps-with-angularjs)** &raquo;
-
 Thinking Ahead...
 =================
 - Challenging stuff
-  - SharePoint creates a new AppWeb & throws away the old one when updating the app
-    - Storing app data in AppWeb's lists/libraries? **You'll lose it all on updates!**
-  - Handling app authentication (tokens)
-    - **DO NOT RETURN OAUTH ACCESS TOKENS TO CLIENT**
-    - May need an intermediary (*see Research Project Code Sample in **Resources** section for example*)
 - Cool techniques
-  - Use Google Analytics & virtual page views & custom events to track app usage
-  - Externalize JavaScript & CSS references to a CDN
-    - Enables app updates without actually updating the SharePoint app
-    - Doesn't help with new views
-  - Utilize A/B testing to see what UX works better for your users
-    - Combined with Google Analytics => killer customer service offered to your customers
-  - Use SharePoint workflows to protect sensitive business logic
-    - If server-side code needed, have workflow call it... app never sees where it went / came from
-  - Use BCS External Lists to hide where external data came from
 
 
 
-Thanks! Any Questions?
-======================
-![questions?](img/clapping.gif)
+Challenging stuff
+-----------------
+- SharePoint creates a new AppWeb & throws away the old one when updating the app
+  - Storing app data in AppWeb's lists/libraries? **You'll lose it all on updates!**
+- Handling app authentication (tokens)
+  - **DO NOT RETURN OAUTH ACCESS TOKENS TO CLIENT**
+  - May need an intermediary (*see Research Project Code Sample in **Resources** section for example*)
 
 
 
-Andrew Connell
-==============
-- [www.andrewconnell.com](http://www.andrewconnell.com) | [@andrewconnell](http://www.twitter.com/andrewconnell)
-- this pres: [github.com / andrewconnell / pres-sp15app-ng-spa](http://github.com/andrewconnell/pres-sp15app-ng-spa)
+Cool techniques
+---------------
+- Use Google Analytics & virtual page views & custom events to track app usage
+- Externalize JavaScript & CSS references to a CDN
+  - Enables app updates without actually updating the SharePoint app
+  - Doesn't help with new views
+- Utilize A/B testing to see what UX works better for your users
+  - Combined with Google Analytics => killer customer service offered to your customers
+- Use SharePoint workflows to protect sensitive business logic
+  - If server-side code needed, have workflow call it... app never sees where it went / came from
+- Use BCS External Lists to hide where external data came from
 
 
 
->#Resources
->- **[AngularJS](https://angularjs.org/)**
->- **[AngularJS in 20 Minutes](https://www.youtube.com/watch?v=tnXO-i7944M)** - from [ng-conf](http://www.ng-conf.org/)
->- [John Papa's **angularjs-styleguide** project ](https://github.com/johnpapa/angularjs-styleguide)
->- [BreezeJS](http://www.breezejs.com)
->- [AC's SharePoint 2013 SPA Templates](http://aconn.me/SphSpaTemplates)
->- Pluralsight on-demand courses
->  - [AngularJS Fundamentals](http://pluralsight.com/training/Courses/TableOfContents/angularjs-fundamentals) - by Joe Eames
->  - [Building Apps with Angular & Breeze Part 1](http://pluralsight.com/training/Courses/TableOfContents/build-apps-angular-breeze) & [Part 2](http://pluralsight.com/training/Courses/TableOfContents/build-apps-angular-breeze-part2) - by John Papa
->  - [Building SharePoint Apps as Single Page Apps with AngularJS](http://pluralsight.com/training/Courses/TableOfContents/building-sharepoint-apps-spa-angularjs) - by Andrew Connell
-- Sample SharePoint SPA Projects
-  - [OfficeDev - Learning Path Manager Code Sampel](https://github.com/OfficeDev/Learning-Path-Manager-Code-Sample) by Andrew Connell (*same as this one*)
-  - [OfficeDev - Research Project Code Sample](https://github.com/OfficeDev/Research-Project-Code-Sample) by Andrew Connell & [Scot Hillier](http://www.twitter.com/scothillier)
+#Resources (1)
+- **[AngularJS](https://angularjs.org/)**
+- **[AngularJS in 20 Minutes](https://www.youtube.com/watch?v=tnXO-i7944M)** - from [ng-conf](http://www.ng-conf.org/)
+- [John Papa's **angularjs-styleguide** project ](https://github.com/johnpapa/angularjs-styleguide)
+- [BreezeJS](http://www.breezejs.com)
+- [AC's SharePoint 2013 SPA Templates](http://aconn.me/SphSpaTemplates)
 
-&laquo; **[back to top](#building-sharepoint-single-page-apps-with-angularjs)** &raquo;
+
+
+#Resources (2) - Pluralsight on-demand courses
+- [AngularJS Fundamentals](http://pluralsight.com/training/Courses/TableOfContents/angularjs-fundamentals) - by Joe Eames
+- [Building Apps with Angular & Breeze Part 1](http://pluralsight.com/training/Courses/TableOfContents/build-apps-angular-breeze) & [Part 2](http://pluralsight.com/training/Courses/TableOfContents/build-apps-angular-breeze-part2) - by John Papa
+- [Building SharePoint Apps as Single Page Apps with AngularJS](http://pluralsight.com/training/Courses/TableOfContents/building-sharepoint-apps-spa-angularjs) - by Andrew Connell
+
+
+
+#Resources (3) - Sample SharePoint SPA Projects
+- [OfficeDev - Learning Path Manager Code Sampel](https://github.com/OfficeDev/Learning-Path-Manager-Code-Sample) by Andrew Connell (*same as this one*)
+- [OfficeDev - Research Project Code Sample](https://github.com/OfficeDev/Research-Project-Code-Sample) by Andrew Connell & [Scot Hillier](http://www.twitter.com/scothillier)
+- [OfficeDev - SP Angular Expense Manager Code Sample](https://github.com/OfficeDev/SP-AngularJS-ExpenseManager-Code-Sample) by Dan Wahlin 
