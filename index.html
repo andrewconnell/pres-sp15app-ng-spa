@@ -18,12 +18,12 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '/css/print/pdf.css';
+        link.href = 'css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
       }
     </script>
     <!--[if lt IE 9]>
-    <script src="/lib/js/html5shiv.js"></script>
+    <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="shared/styles.css">
   </head>
@@ -36,10 +36,19 @@
           <p><a href="http://www.github.com/andrewconnell/pres-sp15app-ng-spa">github.com / andrewconnell / pres-sp15app-ng-spa</a></p>
         </section>
 
-        <section id="bioSlide"
-                 data-markdown="shared/bio.md"  
-                 data-separator="^\n\n\n"  
-                 data-vertical="^\n\n">
+        <section>
+          <section data-markdown="shared/bio.md"  
+                   data-separator="^\n\n\n"  
+                   data-vertical="^\n\n">
+          </section>
+          <section data-markdown="shared/msftcloudshow.md"  
+                   data-separator="^\n\n\n"  
+                   data-vertical="^\n\n">
+          </section>
+          <section data-markdown="shared/itunity.md"  
+                   data-separator="^\n\n\n"  
+                   data-vertical="^\n\n">
+          </section>
         </section>
 
         <section data-markdown="presentation.md"  
@@ -50,9 +59,10 @@
         <section>
           <h1 id="questions-">Questions?</h1>
           <p><img src="shared/clapping.gif" alt="questions?"></p>
-          <p><a href="http://www.andrewconnell.com">www.andrewconnell.com</a></p>
           <p><a href="http://www.twitter.com/andrewconnell">@andrewconnell</a></p>
+          <p><a href="http://www.andrewconnell.com">www.andrewconnell.com</a></p>
           <p><a href="http://www.github.com/andrewconnell/pres-sp15app-ng-spa">github.com / andrewconnell / pres-sp15app-ng-spa</a></p>
+          <p>follow-up with me at <a href="http://www.itunity.com/go/andrewconnell">itunity.com / go / andrewconnell</a></p>
         </section>
 
       </div>
