@@ -1,0 +1,7 @@
+.reveal section img {
+  border: 0px solid black; 
+  background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
