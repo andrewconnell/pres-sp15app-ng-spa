@@ -113,6 +113,6 @@ Cool techniques
 
 
 #Resources (3) - Sample SharePoint SPA Projects
-- [OfficeDev - Learning Path Manager Code Sampel](https://github.com/OfficeDev/Learning-Path-Manager-Code-Sample) by Andrew Connell (*same as this one*)
+- [OfficeDev - Learning Path Manager Code Sample](https://github.com/OfficeDev/Learning-Path-Manager-Code-Sample) by Andrew Connell (*same as this one*)
 - [OfficeDev - Research Project Code Sample](https://github.com/OfficeDev/Research-Project-Code-Sample) by Andrew Connell & [Scot Hillier](http://www.twitter.com/scothillier)
 - [OfficeDev - SP Angular Expense Manager Code Sample](https://github.com/OfficeDev/SP-AngularJS-ExpenseManager-Code-Sample) by Dan Wahlin 
