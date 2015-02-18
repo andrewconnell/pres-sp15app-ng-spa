@@ -29,3 +29,5 @@ Objectives
 - Learn how you can build SharePoint Hosted Apps as a full blown and first class experience for users with zero server side code.
 - Learn how to create enterprise class apps using JavaScript
 - Learn how to build single page apps using AngularJS
+
+[![Analytics](https://ga-beacon.appspot.com/UA-59889067-1/pres-sp15app-ng-spa/readme)](https://github.com/igrigorik/ga-beacon)
