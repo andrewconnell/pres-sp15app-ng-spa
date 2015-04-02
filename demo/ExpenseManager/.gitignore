@@ -1,0 +1,18 @@
+# ignore generic files from macos
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+**/appjs/
+
+**/bower_packages/
+**/npm_packages/
+
+**/app/**/*.js
+**/app/**/*.js.map
+
+**/typings/**/*.d.ts
+!**/typings/**/expenseApp.d.ts
+!**/typings/**/tsd.d.ts
