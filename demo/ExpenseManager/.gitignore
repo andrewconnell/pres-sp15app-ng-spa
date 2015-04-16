@@ -1,3 +1,5 @@
+.idea
+
 # ignore generic files from macos
 *~
 *.lock
@@ -8,8 +10,10 @@
 **/appjs/
 
 **/bower_packages/
-**/npm_packages/
+**/node_modules/
 
+**/js/**/*.js
+**/js/**/*.js.map
 **/app/**/*.js
 **/app/**/*.js.map
 
