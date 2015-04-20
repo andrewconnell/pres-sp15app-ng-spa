@@ -1,6 +1,14 @@
 # Configure the Completed Project
 In order to run the completed project provided here, you must perform some setup steps. 
 
+> You can see quick video of the running application here: [https://youtu.be/vJGY_Dv9r8U](https://youtu.be/vJGY_Dv9r8U)
+
+This demo was built using WebStorm, but can be run in any environment. I used the Node.js static webserver [superstatic](https://www.npmjs.com/package/superstatic). In the demo video above, it's installed globally & I start it by running the following in the root folder of the project (this folder):
+
+````
+ss --port 8000
+````
+
 ## Prerequisites
 1. You must have an Office 365 tenant complete this lab. If you do not have one, the lab for **[O3651-7 Setting up your Developer environment in Office 365](https://github.com/OfficeDev/TrainingContent/blob/master/O3651/O3651-5%20Getting%20started%20with%20Office%20365%20APIs/Lab.md)** shows you how to obtain a trial.
 1. You must have an Azure subscription with the Office 365 tenant's directory tied to the Azure subscription.
