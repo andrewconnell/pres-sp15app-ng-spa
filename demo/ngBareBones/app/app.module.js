@@ -9,14 +9,10 @@
   app.config(['$httpProvider', 'adalAuthenticationServiceProvider',
     function($httpProvider, adalProvider){
 
-      // security
-      adalProvider.init({
-        tenant:'',
-        clientId:'',
-        postLogoutRedirectUrl:'http://localhost:8000',
-        endpoints:''
-      });
+      // setup security with adal
 
+      // setup routes in the app
+      
     }]);
 
 })();
